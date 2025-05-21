@@ -40,3 +40,81 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Moved inline styles from App.tsx */
+
+body {
+  min-height: 100vh;
+  background: white;
+}
+
+main {
+  background: radial-gradient(circle at center, #ffe4e6, #fecdd3);
+}
+
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.contact-links a {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1f2937;
+  background: white;
+}
+
+/* Added bounce effect to buttons on hover */
+.contact-links a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  transform: translateY(-3px);
+}
+
+.contact-links a svg {
+  margin-right: 0.5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
