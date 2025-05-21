@@ -24,17 +24,17 @@ function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          IT Analyst | DevOps & AWS Specialist | Infrastructure as Code Advocate
+          <span>IT Analyst</span> | <span>DevOps</span> & <span>AWS Specialist</span> | <span>Infrastructure as Code Advocate</span>
         </motion.p>
         <div className="contact-links">
           <a href="mailto:snehamanna10@gmail.com">
-            <Mail /> Contact
+            <Mail/>
           </a>
           <a href="https://github.com/thesnehathing" target="_blank">
-            <Github /> GitHub
+            <Github/>
           </a>
           <a href="https://linkedin.com/in/thesnehathing" target="_blank">
-            <Linkedin /> LinkedIn
+            <Linkedin/>
           </a>
         </div>
         <motion.div

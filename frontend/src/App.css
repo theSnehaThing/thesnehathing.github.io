@@ -37,10 +37,6 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
-}
-
 /* Moved inline styles from App.tsx */
 
 body {
@@ -49,7 +45,7 @@ body {
 }
 
 main {
-  background: radial-gradient(circle at center, #ffe4e6, #fecdd3);
+  background: radial-gradient(circle at center, #ffdfe1, #ffb6bf);
 }
 
 section {
@@ -75,29 +71,30 @@ p {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .contact-links a {
   border: 1px solid #d1d5db;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #1f2937;
   background: white;
+  border-radius: 50px; /* Made the buttons fully round */
 }
 
-/* Added bounce effect to buttons on hover */
+/* Increased bounce effect on buttons */
 .contact-links a:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
-  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-6px);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.contact-links a svg {
+/* .contact-links a svg {
   margin-right: 0.5rem;
-}
+} */
 
 .grid-container {
   display: grid;
@@ -130,4 +127,45 @@ p {
 .animated-header span{
   /* color: #ff6b6b; */
   transition: color 0.3s ease;
+}
+
+/* Added hover effect to change color of IT Analyst | DevOps etc. */
+.animated-paragraph span:hover {
+  color: #ff6b6b;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+/* Added flip effect to cards */
+.card {
+  perspective: 1000px;
+  position: relative;
+}
+
+.card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
