@@ -105,8 +105,9 @@ p {
   gap: 1.5rem;
 }
 
+/* Updated card style to have a dashed border */
 .card {
-  background: white;
+  background: whitesmoke;
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -117,4 +118,16 @@ p {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
+}
+
+/* Added hover effect to change color of 'Sneha Manna' */
+.animated-header span:hover {
+  color: #ff6b6b;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.animated-header span{
+  /* color: #ff6b6b; */
+  transition: color 0.3s ease;
 }
